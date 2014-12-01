@@ -223,8 +223,12 @@ footer p {
 		 color: black;
 	 }
 
-	.respActivity {
+	.respActivity  /* sopra 768px */  {
 		width: 90%;
+	}
+	
+	.smHidden  /* sopra 768px */  {
+		display: none;
 	}
 }
 	
@@ -237,23 +241,29 @@ footer p {
         clear: both;
     }
 
-	.seiQui {
+	.seiQui /* sopra 1200px */ {
 		font-weight: bold;
 	}
 
-	.fadeHover:hover {
+	.fadeHover:hover /* sopra 1200px */ {
 		opacity: 0.7;
 	}
 
-	.breadcrumb {
+	.breadcrumb /* sopra 1200px */ {
 	  padding: 8px 15px;
 	  list-style: none;
 	  background-color: transparent;
 	  border-radius: 4px;
 	}
 
-	.respActivity {
+	.respActivity /* sopra 1200px */ {
 		width: 90%;
+	}
+	
+	.smHidden  /* sopra 1200px */ {
+		display: none;
 	}
 
 }
+
+
