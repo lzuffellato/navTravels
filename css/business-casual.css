@@ -129,6 +129,14 @@ footer p {
 .paddingBottom50 {
 	padding-bottom: 50px;
 }
+
+.breadcrumb{
+  padding: 8px 15px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
 /*=============================================== CSS PER RISULTATI RICERCA ===============================================*/
 @import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 
@@ -288,12 +296,6 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 		opacity: 0.7;
 	}
 
-	.breadcrumb /* sopra 1200px */ {
-	  padding: 8px 15px;
-	  list-style: none;
-	  background-color: transparent;
-	  border-radius: 4px;
-	}
 
 	.respActivity /* sopra 1200px */ {
 		width: 90%;
