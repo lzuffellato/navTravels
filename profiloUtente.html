@@ -32,19 +32,6 @@
 </head>
 
 <body>
-    
-<script type="text/javascript">
-	$(document).ready(function() {
-  $('#olvidado').click(function(e) {
-    e.preventDefault();
-    $('div#form-olvidado').toggle('500');
-  });
-  $('#acceso').click(function(e) {
-    e.preventDefault();
-    $('div#form-olvidado').toggle('500');
-  });
-});
-	</script>
 
 <!------------------------------------------- LOGIN ------------------------------------------->	
 	
@@ -127,74 +114,8 @@
     <div class="container">
         <div class="row">
             <div class="box">
-                <div class="row">
-                <!---- BREADCRUMB ---->	
-                    <ol class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active">Accedi</li>
-                    </ol>
-                <!---- FORM ACCESSO ---->	    
-                    <div class="col-md-6 col-md-offset-3">
-                      <h4 style="border-bottom: 1px solid #c5c5c5;"><i class="glyphicon glyphicon-user"></i>
-                        Accedi al tuo account!
-                      </h4>
-                      <div style="padding: 20px;" id="form-olvidado">
-                      <form accept-charset="UTF-8" role="form" id="login-form" method="post">
-                          <fieldset>
-                            <div class="form-group input-group">
-                              <span class="input-group-addon">
-                                @
-                              </span>
-                              <input class="form-control" placeholder="Email" name="email" type="email" required="" autofocus="">
-                            </div>
-                            <div class="form-group input-group">
-                              <span class="input-group-addon">
-                                <i class="glyphicon glyphicon-lock">
-                                </i>
-                              </span>
-                              <input class="form-control" placeholder="Password" name="password" type="password" value="" required="">
-                            </div>
-                            <div class="form-group">
-                              <button type="submit" class="btn btn-primary btn-block">
-                                Accedi &nbsp;&nbsp;
-                                <a href="profiloUtente.html" style="color: white; text-decoration: none;">Test Profilo</a>
-                              </button>
-                              <p class="help-block">
-                                <a class="pull-right text-muted" href="#" id="olvidado"><small>Hai dimenticato la password?</small></a>
-                              </p>
-                            </div>
-                          </fieldset>
-                        </form>
-                      </div>
-                      <!--<div style="display: none;" id="form-olvidado">
-                        <h4 class="">
-                          Hai dimenticato la password?
-                        </h4>
-                        <form accept-charset="UTF-8" role="form" id="login-recordar" method="post">
-                          <fieldset>
-                            <span class="help-block">
-                              E-mail che usi per accedere al tuo account
-                              <br>
-                              TI manderemo un e-mail con le istruzioni per creare una nuova password
-                            </span>
-                            <div class="form-group input-group">
-                              <span class="input-group-addon">
-                                @
-                              </span>
-                              <input class="form-control" placeholder="Email" name="email" type="email" required="">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block" id="btn-olvidado">
-                              Continua
-                            </button>
-                            <p class="help-block">
-                              <a class="text-muted" href="#" id="acceso"><small>Accedi</small></a>
-                            </p>
-                          </fieldset>
-                        </form>
-                      </div>-->
-                    </div>
-
-                </div>
+				
+                
             </div>
         </div>
 	</div>
