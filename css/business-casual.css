@@ -137,6 +137,22 @@ footer p {
   border-radius: 4px;
 }
 
+.padding3015 {
+	padding: 30px 15px;
+}
+
+.logButton {
+	margin-top: 5px;
+	position: relative;
+	float: right;
+	margin-right: 1cm;
+	padding: 15px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+}
+
+
 /*=============================================== CSS PER RISULTATI RICERCA ===============================================*/
 @import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 
@@ -299,20 +315,4 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 		width: 90%;
 	}
 
-}
-
-
-.padding3015 {
-	padding: 30px 15px;
-}
-
-.logButton {
-	margin-top: 5px;
-	position: relative;
-	float: right;
-	margin-right: 1cm;
-	padding: 10px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
 }
