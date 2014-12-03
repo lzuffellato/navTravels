@@ -260,6 +260,8 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 		color: #777;
 		/*background-color: rgba(255,255,255,0.5);*/
 		padding: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 	.nav > li > a:hover, .nav > li > a:focus /* sopra 768px */{
@@ -272,10 +274,6 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 
 	.respActivity  /* sopra 768px */  {
 		width: 90%;
-	}
-	
-	.smHidden  /* sopra 768px */  {
-		display: none;
 	}
 }
 	
@@ -300,14 +298,21 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 	.respActivity /* sopra 1200px */ {
 		width: 90%;
 	}
-	
-	.smHidden  /* sopra 1200px */ {
-		display: none;
-	}
 
 }
 
 
 .padding3015 {
 	padding: 30px 15px;
+}
+
+.logButton {
+	margin-top: 5px;
+	position: relative;
+	float: right;
+	margin-right: 1cm;
+	padding: 10px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
 }
