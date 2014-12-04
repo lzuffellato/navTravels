@@ -370,3 +370,17 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 .roundBorders {
 -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;
 }
+
+.box-content-left {
+    display: inline-block;
+    border-right: 1px solid black;
+    width: 25%;
+    float:left;
+    padding-left: 10px;
+}
+
+.box-content-right {
+    width: 75%;
+    float: right;
+    padding-left: 40px;
+}
