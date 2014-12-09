@@ -389,3 +389,26 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.socialButton {
+	width: 45px;
+	height: 35px;
+	margin-bottom: 5px;
+}
+
+.imgLogin {
+	width: 90%; 
+	margin-top: 25px; 
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+
+.labelBlue {
+	background-color:blue;
+}
+
+.imgSignUp {
+	width: 90%;	 
+	margin-top: 25px; 
+}
