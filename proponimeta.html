@@ -32,16 +32,21 @@
 </head>
 
 <body>
-
+<!------------------------------------------- LOGIN ------------------------------------------->	
+	
+	<div class="row box logButton hidden-xs">
+			<a href="registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a><br>
+			<a href="accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a><br>
+	</div>
     <div class="brand"><a href="index.html">NavTravels</a></div>
     <div class="address-bar">Viaggi per persone sbiansate | Hipster places | Clever catchphrases | Sbessoea for fun</div>
 
-<!-- Navigation -->
+<!------------------------------------------- NAVBAR ------------------------------------------->
 	
     <nav class="navbar navbar-default" role="navigation">
 		<script type="text/javascript">
 			document.onscroll = function() {
-				if( $(window).scrollTop() > 176) {
+				if( ( $(window).scrollTop() > 176 ) && ( $(window).width > '768px' ) ) {
 					$('nav').removeClass('navbar-default').addClass('navbar-fixed-top');
 				}
 				else {
@@ -51,8 +56,6 @@
 		</script>
 		
         <div class="container">
-			
-<!-- Brand and toggle get grouped for better mobile display -->
 			
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -72,7 +75,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             	<ul class="nav navbar-nav allineamento">
 					<li class="dropdown">
-						<a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Esplora le città<span class="caret"></span></a>
+						<a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-briefcase hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Esplora le città<span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="cities/citta1.html">Città 1</a></li>
 							<li><a href="#">Città 2</a></li>
@@ -82,46 +85,70 @@
 						</ul>
 					</li>
                     <li>
-                        <a href="about.html">Meta del Mese</a>
+                        <a href="metaMese.html"><span class="glyphicon glyphicon-star hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Meta del Mese</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="blog.html"><span class="glyphicon glyphicon-list hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Blog</a>
                     </li>
-					<li>
-                        <a href="contact.html">Info e Contatti</a>
-                    </li>
+					<!------------------------------------------- MENU' DROPDOWN INFO  ------------------------------------------->	                    
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false">Il mio Profilo<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="registrati.html">Registrati</a></li>
-							<li><a href="accedi.html">Accedi</a></li>
-						</ul>
+                        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                            Info e Contatti <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                           <li class="dropdown-submenu">
+                            <a tabindex="-1" href="infoContatti.html">Informazioni</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="info/info1.html">Info 1</a></li>
+                                    <li><a href="#">Info 2</a></li>
+                                    <li><a href="#">Info 3</a></li>
+                                    <li><a href="#">Info 4</a></li>
+                                    <li><a href="#">Info 5</a></li>
+                                    <li><a href="#">Info 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li> 
+                            <li><a href="infoContatti.html#contatti">Contatti</a></li>
+                        </ul>
+                    </li>
+<!-------------------------------------------  FINE MENU' DROPDOWN INFO  ------------------------------------------->	
+					<li>
+                        <a href="proponiMeta.html"><span class="glyphicon glyphicon-send hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Proponi la tua meta!</a>
+                    </li>
+					<li class="hidden-lg hidden-md hidden-sm">
+						<a href="registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a>
+					</li>
+					<li class="hidden-lg hidden-md hidden-sm">
+						<a href="accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a>
 					</li>
 					<li>
-                        <a href="search.html"><span class="smHidden">Ricerca </span><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        <a href="search.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="hidden-lg hidden-md hidden-sm">  Ricerca</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
+<!------------------------------------------- PROPONI LA TUA META ------------------------------------------->
     <div class="container">
         <div class="row">
             <div class="box">
-                <!--Breadcrumbs-->
+                
+                <!---- BREADCRUMBS ---->
                 <ol class="breadcrumb">
 					<li><a href="index.html">Home</a></li>
-					<li class="active">Proponi la tua meta</li>
+					<li class="active">Proponi la Tua Meta</li>
 				</ol> 
-                <!-- FORM proponi la tua meta -->
+                
+                <!---- FORM proponi la tua meta ---->
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">Proponi
-                        <strong>la tua fottuta meta</strong>
+                        <strong>la tua meta</strong>
                     </h2>
                     <hr>
                  <form role="form">
-                        <div class="row padding30">
+                        <div class="row padding15">
                             <div class="form-group col-lg-4">
                                 <label>Nome</label>
                                 <input type="text" class="form-control">
