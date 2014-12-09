@@ -389,3 +389,8 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.padding15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
