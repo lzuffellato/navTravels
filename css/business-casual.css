@@ -390,6 +390,7 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
     padding-right: 30px;
 }
 
+<<<<<<< HEAD
 .socialButton {
 	width: 45px;
 	height: 35px;
@@ -411,4 +412,9 @@ hgroup h2.lead { font: normal normal 1.125em "Roboto",Arial,Verdana,sans-serif; 
 .imgSignUp {
 	width: 90%;	 
 	margin-top: 25px; 
+=======
+.padding15 {
+    padding-left: 15px;
+    padding-right: 15px;
+>>>>>>> origin/master
 }
