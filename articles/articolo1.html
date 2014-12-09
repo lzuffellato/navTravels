@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NavTravels</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+	
+    <!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!------------------------------------------- LOGIN ------------------------------------------->	
+	
+	<div class="row box logButton hidden-xs">
+			<a href="../registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a><br>
+			<a href="../accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a><br>
+	</div>
+
+    <div class="brand"><a href="../index.html">NavTravels</a></div>
+    <div class="address-bar">Viaggi per persone sbiansate | Hipster places | Clever catchphrases | Sbessoea for fun</div>
+
+<!------------------------------------------- NAVBAR ------------------------------------------->
+	
+    <nav class="navbar navbar-default" role="navigation">
+		<script type="text/javascript">
+			document.onscroll = function() {
+				if( ( $(window).scrollTop() > 176 ) && ( $(window).width > '768px' ) ) {
+					$('nav').removeClass('navbar-default').addClass('navbar-fixed-top');
+				}
+				else {
+					$('nav').removeClass('navbar-fixed-top').addClass('navbar-default');
+				}
+			};
+		</script>
+		
+        <div class="container">
+			
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				
+<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+				
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+			
+<!-- Collect the nav links, forms, and other content for toggling -->
+			
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            	<ul class="nav navbar-nav allineamento">
+					<li class="dropdown">
+						<a href="../index.html" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-briefcase hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Esplora le città<span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="citta1.html">Città 1</a></li>
+							<li><a href="#">Città 2</a></li>
+							<li><a href="#">Città 3</a></li>
+							<li class="divider"></li>
+							<li><a href="../esploraLeCitta.html">Visualizza tutte</a></li>
+						</ul>
+					</li>
+                    <li>
+                        <a href="../metaMese.html"><span class="glyphicon glyphicon-star hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Meta del Mese</a>
+                    </li>
+                    <li>
+                        <a href="../blog.html"><span class="glyphicon glyphicon-list hidden-lg hidden-md hidden-sm seiQui" aria-hidden="true"></span>  Blog</a>
+                    </li>
+					<!------------------------------------------- MENU' DROPDOWN INFO  ------------------------------------------->	                    
+					<li class="dropdown">
+                        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                            Info e Contatti <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                           <li class="dropdown-submenu">
+                            <a tabindex="-1" href="../infoContatti.html">Informazioni</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href=".../info/info1.html">Info 1</a></li>
+                                    <li><a href="#">Info 2</a></li>
+                                    <li><a href="#">Info 3</a></li>
+                                    <li><a href="#">Info 4</a></li>
+                                    <li><a href="#">Info 5</a></li>
+                                    <li><a href="#">Info 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li> 
+                            <li><a href="../infoContatti.html#contatti">Contatti</a></li>
+                        </ul>
+                    </li>
+                    <!-------------------------------------------  FINE MENU' DROPDOWN INFO  ------------------------------------------->	
+					<li>
+                        <a href="../proponiMeta.html"><span class="glyphicon glyphicon-send hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Proponi la tua meta!</a>
+                    </li>
+					<li class="hidden-lg hidden-md hidden-sm">
+						<a href="../registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a>
+					</li>
+					<li class="hidden-lg hidden-md hidden-sm">
+						<a href="../accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a>
+					</li>
+					<li>
+                        <a href="../search.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="hidden-lg hidden-md hidden-sm">  Ricerca</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+<!-- ========= Marketing ======== -->  
+      
+        <div class="row">
+            <div class="box">
+				<ol class="breadcrumb">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../blog.html">Blog</a></li>
+					<li class="active">Articolo 1</li>
+				</ol>
+
+                <div class="col-lg-12">
+					<div class="row padding30">
+                    <div class="col-sm-12">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <h1><a href="#">Articolo 1</a></h1><h3>Bla, bla, blah!</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12 text-center">
+                            <a href="#" class="thumbnail">
+                                <img src="http://placehold.it/550x350">
+                            </a>
+                          </div>
+                          <div class="col-sm-12">     
+                            <p>
+								Mentitum sunt singulis occaecat, qui voluptate id doctrina, pariatur veniam 
+								dolore ne lorem qui voluptate aliqua excepteur iis aliqua possumus a firmissimum 
+								se varias litteris ubi relinqueret, tempor ita enim doctrina do laborum do minim 
+								nescius. Nescius quis ut offendit consectetur. 
+							</p>
+							<p>
+							  Arbitror sempiternum ad officia 
+								nam hic nisi efflorescere, non veniam cernantur cernantur ne veniam mandaremus 
+								graviterque, singulis irure summis eiusmod ipsum, labore doctrina est legam 
+								varias, aliqua nostrud id probant, noster familiaritatem laboris tamen mentitum. 
+								Eu quibusdam qui proident ut consequat distinguantur te expetendis, ingeniis 
+								fidelissimae ab commodo, velit si aliquip.
+							</p>
+							<p>Senserit e lorem nescius a et illum 
+								quae labore excepteur, est aliquip reprehenderit ad cupidatat ea sunt proident. 
+								A multos offendit, ingeniis aut fugiat tempor ubi enim senserit ne tractavissent 
+								hic est ne voluptatibus, dolor ullamco graviterque ubi ex nisi transferrem o te 
+								a quid doctrina, ita quis probant officia. Occaecat illum litteris si id tamen 
+								consequat praesentibus.
+                            </p>
+                            <p><a class="btn" href="#">Leggi altro</a></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <p></p>
+                            <p>
+                              <i class="icon-user"></i> da <a href="#">Leonardo</a> 
+                              | <i class="icon-calendar"></i> 15 Dicembre 2014
+                              | <i class="icon-comment"></i> <a href="#">3 Commenti</a>
+                              | <i class="icon-share"></i> <a href="#">39 Condivisioni</a>
+                              | <i class="icon-tags"></i> Tags: <a href="#"><span class="label label-info">Snipp</span></a> 
+                              <a href="cities/citta1.html"><span class="label label-info">Città 1</span></a> 
+                              <a href="cities/alloggiare1.html"><span class="label label-info">Alloggiare</span></a> 
+                              <a href="#"><span class="label label-info labelBlue">Inserisci tag</span></a>
+                            </p>
+                          </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
