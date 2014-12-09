@@ -32,7 +32,17 @@
 </head>
 
 <body>
-	
+<script type="text/javascript">
+	$(document).ready(function(e){
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+		e.preventDefault();
+		var param = $(this).attr("href").replace("#","");
+		var concept = $(this).text();
+		$('.search-panel span#search_concept').text(concept);
+		$('.input-group #search_param').val(param);
+	});
+});
+</script>		
 <!------------------------------------------- LOGIN ------------------------------------------->
 
     <div class="row box logButton hidden-xs">
@@ -139,51 +149,59 @@
 			<!---- BREADCRUBMBS ----->
 			<ol class="breadcrumb">
 				<li><a href="index.html">Home</a></li>
-				<li class="active">Search</li>
+				<li class="active">Ricerca</li>
 			</ol>
-			<div class="row padding3015">
+			<div class="row padding30">
 
 				<!---- BARRA DI RICERCA ----->
 				<div class="row">
-					<div class="col-sm-2 text-center">
-					
-					</div>
-					<div class="col-sm-8">
-						<h3>Ricerca!</h3>
-						<form action="" class="search-form">
-							<div class="form-group has-feedback">
-								<label for="search" class="sr-only">Search</label>
-								<input type="text" class="form-control" name="search" id="search" placeholder="search">
-								<span class="glyphicon glyphicon-search form-control-feedback"></span>
-							</div>
-						</form>
-					</div>
+					<div class="col-xs-8 col-xs-offset-2">
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span id="search_concept">Cerca in</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                  <li><a href="#contains">Esplora le Città</a></li>
+                                  <li><a href="#its_equal">Meta del Mese</a></li>
+                                  <li><a href="#greather_than">Blog</a></li>
+                                  <li><a href="#less_than">Info e Contatti</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#all">Tutto il Sito</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">         
+                            <input type="text" class="form-control" name="x" placeholder="Cerca...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                    </div>
 				</div>
 				<hr>
 				
 <!------------------------------------------- RISULTATI RICERCA ------------------------------------------->
 				
                  <hgroup class="mb20">
-                    <h1>Search Results</h1>
-                    <h2 class="lead"><strong class="text-danger">3</strong> results were found for the search for <strong class="text-danger">Lorem</strong></h2>								
+                    <h1>Risultati Ricerca</h1>
+                    <h2 class="lead">Sono stati trovati <strong class="text-danger">2</strong> risultati per <strong class="text-danger">Città 1</strong> in <strong class="text-danger">BLOG</strong> </h2>								
                 </hgroup>
 
                 <section class="col-xs-12 col-sm-12 col-md-12">
                     <article class="search-result row">
                         <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/people" alt="Lorem ipsum" /></a>
+                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://placehold.it/250x140" alt="Lorem ipsum" /></a>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-2">
                             <ul class="meta-search">
-                                <li><i class="glyphicon glyphicon-calendar"></i> <span>02/15/2014</span></li>
-                                <li><i class="glyphicon glyphicon-time"></i> <span>4:28 pm</span></li>
-                                <li><i class="glyphicon glyphicon-tags"></i> <span>People</span></li>
+                                <li><i class="glyphicon glyphicon-calendar"></i> <span>15/12/2014</span></li>
+                                <li><i class="glyphicon glyphicon-time"></i> <span>16:28 </span></li>
+                                <li><i class="glyphicon glyphicon-tags"></i> <span>Città 1, <i class="glyphicon glyphicon-tags"></i> <span>Alloggiare</span></span></li>
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-7 excerpet">
-                            <h3><a href="#" title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>						
-                            <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                            <h3><a href="articles/articolo1.html" title="">Titolo Sbiansato 1</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>
                         </div>
                         <span class="clearfix borda"></span>
                     </article>
@@ -194,38 +212,18 @@
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-2">
                             <ul class="meta-search">
-                                <li><i class="glyphicon glyphicon-calendar"></i> <span>02/13/2014</span></li>
-                                <li><i class="glyphicon glyphicon-time"></i> <span>8:32 pm</span></li>
-                                <li><i class="glyphicon glyphicon-tags"></i> <span>Food</span></li>
+                                <li><i class="glyphicon glyphicon-calendar"></i> <span>13/12/2014</span></li>
+                                <li><i class="glyphicon glyphicon-time"></i> <span>8:32 </span></li>
+                                <li><i class="glyphicon glyphicon-tags"></i> <span>Città 1, </span><i class="glyphicon glyphicon-tags"></i> <span>Divertirsi, </span><i class="glyphicon glyphicon-tags"></i> <span>Fiera</span></li>
                             </ul>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-7">
-                            <h3><a href="#" title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>						
-                            <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
+                            <h3><a href="#" title="">Titolo Sbiansato 2</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>				
+                            
                         </div>
                         <span class="clearfix borda"></span>
-                    </article>
-
-                    <article class="search-result row">
-                        <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a href="#" title="Lorem ipsum" class="thumbnail"><img src="http://lorempixel.com/250/140/sports" alt="Lorem ipsum" /></a>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2">
-                            <ul class="meta-search">
-                                <li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2014</span></li>
-                                <li><i class="glyphicon glyphicon-time"></i> <span>10:13 am</span></li>
-                                <li><i class="glyphicon glyphicon-tags"></i> <span>Sport</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-7">
-                            <h3><a href="#" title="">Voluptatem, exercitationem, suscipit, distinctio</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, exercitationem, suscipit, distinctio, qui sapiente aspernatur molestiae non corporis magni sit sequi iusto debitis delectus doloremque.</p>						
-                            <span class="plus"><a href="#" title="Lorem ipsum"><i class="glyphicon glyphicon-plus"></i></a></span>
-                        </div>
-                        <span class="clearfix border"></span>
-                    </article>			
-
+                    </article>	
                 </section>    
             </div>
 		</div>
