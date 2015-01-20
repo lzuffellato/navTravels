@@ -1,0 +1,13 @@
+//CSS PER LA STAMPA
+
+@media print {
+	
+	body {
+		background: background: none #FFF;color: #000;
+		font-size: 12pt;
+		font-family: sans-serif;
+	}
+	div.container {
+		width: auto;
+	}
+}

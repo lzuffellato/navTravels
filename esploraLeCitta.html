@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="css/print.cssp" media="print">
 	
     <!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -35,7 +35,7 @@
 	
 <!------------------------------------------- LOGIN ------------------------------------------->
 	
-    <div class="row box logButton hidden-xs">
+    <div class="row box logButton hidden-xs hidden-print">
 			<a href="registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a><br>
 			<a href="accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a><br>
 	</div>
@@ -45,7 +45,7 @@
 
 <!------------------------------------------- NAVBAR ------------------------------------------->
 	
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default hidden-print" role="navigation">
 		<script type="text/javascript">
 			document.onscroll = function() {
 				if( ( $(window).scrollTop() > 176 ) && ( $(window).width > '768px' ) ) {
