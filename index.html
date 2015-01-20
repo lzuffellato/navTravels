@@ -15,8 +15,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="css/print.cssp" media="print">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/print.cssp" media="print">
 	
     <!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -36,7 +37,7 @@
 
 <!------------------------------------------- LOGIN ------------------------------------------->	
 	
-	<div class="row box logButton hidden-xs">
+	<div class="row box logButton hidden-xs hidden-print">
 			<a href="registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a><br>
 			<a href="accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a><br>
 	</div>
@@ -46,7 +47,7 @@
 
 <!------------------------------------------- NAVBAR ------------------------------------------->
 	
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default hidden-print" role="navigation">
 		<script type="text/javascript">
 			document.onscroll = function() {
 				if( ( $(window).scrollTop() > 176 ) && ( $(window).width > '768px' ) ) {
@@ -58,7 +59,7 @@
 			};
 		</script>
 		
-        <div class="container">
+        <div class="container hidden-print">
 			
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -148,8 +149,8 @@
                             <strong>navbar-brand</strong>
                         </small>
                     </h2>
-					<hr class="tagline-divider"><br><br>
-                    <div id="carousel-example-generic" class="carousel slide">
+					<hr class="tagline-divider">
+                    <div id="carousel-example-generic" class="carousel slide marginTop20 hidden-print">
                         <!-- Indicators -->
                         <ol class="carousel-indicators hidden-xs">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

@@ -11,6 +11,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+	font-size: 120%;
 }
 
 h1,
@@ -419,6 +420,7 @@ hgroup h2.lead { font: normal normal 1.125em "Open Sans","Helvetica Neue",Helvet
     padding-right: 15px;
 }
 
+<<<<<<< HEAD
 .padding0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -427,4 +429,8 @@ hgroup h2.lead { font: normal normal 1.125em "Open Sans","Helvetica Neue",Helvet
 
 .paddingTop {
     padding-top: 8px;
+=======
+.marginTop20 {
+	margin-top: 20px;
+>>>>>>> FETCH_HEAD
 }
