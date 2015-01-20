@@ -390,6 +390,7 @@ hgroup h2.lead { font: normal normal 1.125em "Open Sans","Helvetica Neue",Helvet
     padding-right: 30px;
 }
 
+
 .socialButton {
 	width: 45px;
 	height: 35px;
@@ -416,4 +417,14 @@ hgroup h2.lead { font: normal normal 1.125em "Open Sans","Helvetica Neue",Helvet
 .padding15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.padding0 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+}
+
+.paddingTop {
+    padding-top: 8px;
 }
