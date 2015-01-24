@@ -58,7 +58,10 @@
     <nav class="navbar navbar-default hidden-print" role="navigation">
 		<script type="text/javascript">
 			document.onscroll = function() {
-				if( ( $(window).scrollTop() > 176 ) && ( $(window).width > '768px' ) ) {
+                 var winHeight = $(window).height();
+                 var docHeight = $( document ).height();
+                 var offset = 236;
+				if( ( $(window).scrollTop() > 176 ) && ((docHeight - offset) > winHeight)) {
 					$('nav').removeClass('navbar-default').addClass('navbar-fixed-top');
 				}
 				else {
