@@ -26,6 +26,14 @@ h6 {
     letter-spacing: 1px;
 }
 
+h2 a{
+    color: #333;
+}
+
+h2 a:hover{
+    color: #428BCA;
+}
+
 p {
     font-size: 1.25em;
     line-height: 1.6;
