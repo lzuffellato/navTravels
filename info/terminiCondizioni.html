@@ -16,7 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="../css/business-casual.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 	
     <!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -42,7 +41,7 @@
 	</div>
 
     <div class="brand"><a href="../index.html">NavTravels</a></div>
-    <div class="address-bar">Sito di viaggi per persone creative | Mete ricercate | Alloggi caratteristici</div>
+    <div class="address-bar">Viaggi per persone sbiansate | Hipster places | Clever catchphrases | Sbessoea for fun</div>
 
 <!------------------------------------------- NAVBAR ------------------------------------------->
 	
@@ -51,7 +50,8 @@
 			document.onscroll = function() {
                  var winHeight = $(window).height();
                  var docHeight = $( document ).height();
-                 var offset = 236;
+                 var offset = 286;
+                //alert(winHeight + " e " + docHeight);
 				if( ( $(window).scrollTop() > 176 ) && ((docHeight - offset) > winHeight)) {
 					$('nav').removeClass('navbar-default').addClass('navbar-fixed-top'); $('.box').addClass('marginTop100');
 				}
@@ -87,14 +87,14 @@
                     </a>
                         <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                             <li class="dropdown-submenu">
-                            <a tabindex="-1" href="civitaDiBagnoregio.html">Civita di Bagnoregio, Italia</a>
+                            <a tabindex="-1" href="cities/civitaDiBagnoregio.html">Civita di Bagnoregio, Italia</a>
                                 <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="alloggiareCivita.html">Alloggiare</a></li>
+                                <li><a tabindex="-1" href="cities/alloggiareCivita.html">Alloggiare</a></li>
                                 <li><a href="#">Mangiare</a></li>
                                 <li><a href="#">Attività</a></li>
                                 <li><a href="#">Info Pratiche</a></li>
                                 <li class="divider"></li>
-                                <li><a href="civitaDiBagnoregio.html">Visualizza tutte</a></li>
+                                <li><a href="cities/civitaDiBagnoregio.html">Visualizza tutte</a></li>
                                 </ul>
                             </li>
 
@@ -158,40 +158,26 @@
       
         <div class="row">
             <div class="box">
+                <!---- BREADCRUMB ---->  
 				<ol class="breadcrumb">
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="../esploraLeCitta.html">Esplora Le Città</a></li>
-					<li class="active">Civita di Bagnoregio</li>
+					<li><a href="../infoContatti.html">Info e Contatti</a></li>
+					<li class="active">Termini e Condizioni d'Uso</li>
 				</ol>
-
-                <div class="col-lg-12">
+                <!---- INFORMAZIONE ---->  
                     <hr>
-                    <h2 class="intro-text text-center">La città:
-                        <strong>Civita di Bagnoregio</strong>
-                    </h2>
-					<hr><br><br>
-					<div class="row text-center">
-						<div class="col-sm-3 paddingBottom50">
-							  <a href="alloggiareCivita.html"><img class="img-circle fadeHover respActivity" src="http://placehold.it/200&text=Alloggiare" alt="Generic placeholder image"></a>
-						</div>
-						<div class="col-sm-3 paddingBottom50">
-							  <a href="#"><img class="img-circle fadeHover respActivity" src="http://placehold.it/200&text=Mangiare" alt="Generic placeholder image"></a>
-						</div>
-						<div class="col-sm-3 paddingBottom50">
-							  <a href="#"><img class="img-circle fadeHover respActivity" src="http://placehold.it/200&text=Attività" alt="Generic placeholder image"></a>
-						</div>
-						<div class="col-sm-3 paddingBottom50">
-							  <a href="#"><img class="img-circle fadeHover respActivity" src="http://placehold.it/200&text=Info+Pratiche" alt="Generic placeholder image"></a>
+                    <h2 class="intro-text text-center">Termini e Condizioni d'Uso</h2>
+					<hr>
+                    
+					<div class="row text-center" >
+						<div class="col-sm-12">
+							  <a href="#"><img class="img-circle fadeHover" src="http://placehold.it/200" alt="Generic placeholder image"></a>
+				             <br><br>			  
+							 <p>Voluptate de legam sed nescius duis ita officia exquisitaque, ubi ipsum aliqua 
+								ab vidisse, se eram nulla dolore proident quo eu amet quid quid probant ea nisi 
+								nam deserunt, litteris quo velit</p>
 						</div>
 					</div>
-					<p>Cupidatat quo aute id iudicem legam iudicem eiusmod. O dolor incididunt, 
-						litteris quorum an occaecat adipisicing an laborum nulla eiusmod est an irure 
-						aliquip id excepteur comprehenderit aut admodum ex commodo varias possumus est 
-						et multos exercitation id incididunt quorum labore ullamco culpa. Hic ita elit 
-						aliqua malis a fugiat laborum ubi possumus se qui sed quis officia non amet 
-						excepteur fidelissimae. An legam laborum in elit aliquip ex velit illum. Te 
-						minim fore noster doctrina. Nam veniam hic varias. Esse mandaremus voluptatibus.</p>
-                </div>
             </div>
         </div>
 
