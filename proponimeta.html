@@ -50,10 +50,10 @@
                  var docHeight = $( document ).height();
                  var offset = 236;
 				if( ( $(window).scrollTop() > 176 ) && ((docHeight - offset) > winHeight)) {
-					$('nav').removeClass('navbar-default').addClass('navbar-fixed-top');
+					$('nav').removeClass('navbar-default').addClass('navbar-fixed-top'); $('.box').addClass('marginTop100');
 				}
 				else {
-					$('nav').removeClass('navbar-fixed-top').addClass('navbar-default');
+					$('nav').removeClass('navbar-fixed-top').addClass('navbar-default'); $('.box').removeClass('marginTop100');
 				}
 			};
 		</script>
