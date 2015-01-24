@@ -79,26 +79,41 @@
 			
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             	<ul class="nav navbar-nav allineamento">
-					<li class="dropdown">
-						<a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-briefcase hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Esplora le città<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="cities/citta1.html">Civita di Bagnoregio, Italia</a></li>
-							<li><a href="#">Collonges la Rouge, Francia</a></li>
-							<li><a href="#">Basel, Svizzera </a></li>
-                            <li><a href="#">Dubrovnick, Svizzera </a></li>
-                            <li><a href="#">Bruges, Belgio </a></li>
-                            <li><a href="#">Český Krumlov, Rep. ceca </a></li>
-							<li class="divider"></li>
-							<li><a href="esploraLeCitta.html">Visualizza tutte</a></li>
-						</ul>
-					</li>
+<!------------------------------------------- MENU' DOPPIO DROPDOWN INFO  ------------------------------------------->	                    
+                    <li class="dropdown">
+                    <a id="dLabel"  data-toggle="dropdown" data-target="#" href="/page.html">
+                    Esplora le Città <span class="caret"></span>
+                    </a>
+                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                            <li class="dropdown-submenu">
+                            <a tabindex="-1" href="cities/civitaDiBagnoregio.html">Civita di Bagnoregio, Italia</a>
+                                <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="cities/alloggiareCivita.html">Alloggiare</a></li>
+                                <li><a href="#">Mangiare</a></li>
+                                <li><a href="#">Attività</a></li>
+                                <li><a href="#">Info Pratiche</a></li>
+                                <li class="divider"></li>
+                                <li><a href="cities/civitaDiBagnoregio.html">Visualizza tutte</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Collonges-la-Rouge, Francia</a></li>
+                            <li><a href="#">Basilea, Svizzera</a></li>
+                            <li><a href="#">Dubrovnik, Croazia</a></li>
+                            <li><a href="#">Bruges, Belgio</a></li>
+                            <li><a href="#">Český Krumlov, Rep.Ceca</a></li>
+                            <li class="divider"></li>
+                            <li><a href="esploraLeCitta.html">Visualizza tutte</a></li>
+                        </ul>
+                    </li>
+<!------------------------------------------- FINE DOPPIO MENU' DROPDOWN INFO  ------------------------------------------->	                    
                     <li>
                         <a href="metaMese.html"><span class="glyphicon glyphicon-star hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Meta del Mese</a>
                     </li>
                     <li>
                         <a href="blog.html"><span class="glyphicon glyphicon-list hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Blog</a>
                     </li>
-					<!------------------------------------------- MENU' DROPDOWN INFO  ------------------------------------------->	                    
+<!------------------------------------------- MENU' DROPDOWN INFO  ------------------------------------------->	                    
 					<li class="dropdown">
                         <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
                            <span class="glyphicon glyphicon-info-sign hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Info e Contatti <span class="caret"> </span>
@@ -107,12 +122,12 @@
                            <li class="dropdown-submenu">
                             <a tabindex="-1" href="infoContatti.html">Informazioni</a>
                                 <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="info/info1.html">Info 1</a></li>
-                                    <li><a href="#">Info 2</a></li>
-                                    <li><a href="#">Info 3</a></li>
-                                    <li><a href="#">Info 4</a></li>
-                                    <li><a href="#">Info 5</a></li>
-                                    <li><a href="#">Info 6</a></li>
+                                    <li><a tabindex="-1" href="info/chiSiamo.html">Chi Siamo</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Cookies e Privacy</a></li>
+                                    <li><a href="#">Termini e Condizioni d'Uso</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="infoContatti.html">Visualizza tutte</a></li>
                                 </ul>
                             </li>
                             <li class="divider"></li> 
@@ -124,19 +139,18 @@
                         <a href="proponiMeta.html"><span class="glyphicon glyphicon-send hidden-lg hidden-md hidden-sm" aria-hidden="true"></span>  Proponi la tua meta!</a>
                     </li>
 					<li class="hidden-lg hidden-md hidden-sm">
-						<a href="registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a><br>
+						<a href="registrati.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Registrati</a>
 					</li>
 					<li class="hidden-lg hidden-md hidden-sm">
-						<a href="accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a><br>
+						<a href="accedi.html"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>  Accedi</a>
 					</li>
 					<li>
-                        <a href="search.html"><span class="hidden-lg hidden-md hidden-sm">Ricerca </span><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                        <a href="search.html"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="hidden-lg hidden-md hidden-sm">  Ricerca</span></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-	
 <!------------------------------------------- META DEL MESE ------------------------------------------->	
     <div class="container">
         <div class="row">
