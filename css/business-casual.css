@@ -162,6 +162,86 @@ footer p {
 	border-radius: 100px;
 }
 
+.roundBorders {
+-webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;
+}
+
+.box-content-left {
+    display: inline-block;
+    border-right: 1px solid black;
+    width: 25%;
+    float:left;
+    padding-left: 10px;
+}
+
+.box-content-right {
+    width: 75%;
+    float: right;
+    padding-left: 40px;
+}
+
+.padding30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.socialButton {
+	width: 45px;
+	height: 35px;
+	margin-bottom: 5px;
+}
+
+.imgLogin {
+	width: 90%; 
+	margin-top: 25px; 
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	border-radius: 20px;
+}
+
+.labelBlue {
+	background-color: blue;
+}
+
+.imgSignUp {
+	width: 90%;	 
+	margin-top: 25px; 
+}
+
+.padding15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+<<<<<<< HEAD
+.padding0 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 8px;
+}
+
+.paddingTop {
+    padding-top: 8px;
+}
+.marginTop20 {
+	margin-top: 20px;
+
+}
+
+.marginTop100 {
+    margin-top: 100px;
+}
+
+.marginTopNormal {
+    margin-top: 0px;
+}
+
+.max600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 /*=============================================== CSS PER RISULTATI RICERCA ===============================================*/
 
@@ -376,82 +456,6 @@ hgroup h2.lead { font: normal normal 1.125em "Open Sans","Helvetica Neue",Helvet
 	}
 
 }
-.roundBorders {
--webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px;
-}
-
-.box-content-left {
-    display: inline-block;
-    border-right: 1px solid black;
-    width: 25%;
-    float:left;
-    padding-left: 10px;
-}
-
-.box-content-right {
-    width: 75%;
-    float: right;
-    padding-left: 40px;
-}
-
-.padding30 {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-
-.socialButton {
-	width: 45px;
-	height: 35px;
-	margin-bottom: 5px;
-}
-
-.imgLogin {
-	width: 90%; 
-	margin-top: 25px; 
-	-webkit-border-radius: 20px; 
-	-moz-border-radius: 20px; 
-	border-radius: 20px;
-}
-
-.labelBlue {
-	background-color: blue;
-}
-
-.imgSignUp {
-	width: 90%;	 
-	margin-top: 25px; 
-}
-
-.padding15 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-<<<<<<< HEAD
-.padding0 {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 8px;
-}
-
-.paddingTop {
-    padding-top: 8px;
-}
-.marginTop20 {
-	margin-top: 20px;
-
-}
-
-.marginTop100 {
-    margin-top: 100px;
-}
-
-.marginTopNormal {
-    margin-top: 0px;
-}
-
-.max600 {
-    max-width: 600px;
+.centered {
     margin: 0 auto;
 }
