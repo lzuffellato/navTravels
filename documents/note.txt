@@ -1,0 +1,19 @@
+NOTE: 
+
+-GENERALE: il codice javascript personalizzato rende la barra dei menu dinamica, fissandola in alto quando si scorre alla sua altezza;
+
+-GENERALE: rari collegamenti potrebbero non funzionare, a causa della scelta di creare delle cartelle contenenti le pagine per organizzare meglio il sito, e dunque sono stati cambiati tutti gli " href " in " href="../ 
+
+-GENERALE: la barra di ricerca ETC**
+
+-MENU: una volta effettuato il login, il menu in cima di per registrarsi/accedere sarebbe dinamicamente modificato (con php) in un collegamento alla pagina "il mio profilo" con a fianco la foto profilo dell'utente in piccolo
+
+-REGISTRATI.HTML: il processo di registrazione continuerebbe su più pagine fino a concludersi con la pagina "il mio profilo"
+
+-ACCEDI.HTML: una volta confermato sul form per accedere, si è collegati al proprio profilo
+
+-BLOG.HTML: cliccando sulla tag cloud uno script php aggiornerebbe la pagina blog rendendola simile a quella dei risultati di ricerca, contenendo l'elenco degli articoli con quel tag
+
+-SEARCH.HTML: i risultati di ricerca sono già visualizzati, come se fosse già stata effettuata la ricerca
+
+-FONT: i font sono su google fonts, ma se manca la connessione internet sono comunque visualizzabili e adatti alla pagina
