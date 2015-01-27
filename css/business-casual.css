@@ -450,3 +450,8 @@ hgroup h2.lead { font: normal normal 1.125em "Open Sans","Helvetica Neue",Helvet
 .marginTopNormal {
     margin-top: 0px;
 }
+
+.max600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
